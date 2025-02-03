@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="härlig-nord-amerikansk-skallig-örn-74815261.webp">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auvas Webpage</title>
+</head>
+<body>
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="margin: 10px; text-align: center;">
+        <img src="Canon_70_200mm_f_2_8L_IS_USM_234444.jpg" alt="Image 1" style="width: 500px; height: 500px;">
+        <p>Canon 70-200 f2.8 ii
+            <div style="max-width: 100px;"></div>
+                Its a very good night photography lens. It has a very good image quality and a very good build quality, very good lens for portrait photography,
+                very good lens for wildlife photography. Overall it is amazing for a lot of different types of photography.
+            </div>
+        </p>
+    </div>
+    <div style="margin: 10px; text-align: center;">
+        <img src="OIP (5).jpg" alt="Image 2" style="width: 600px; height: 500px;">
+        <p>The canon Eos 800D is a very nice camera with 7 fps continuous shooting speed and flash synch at 1/250 second. Battery capacity is also higher in the 80D. The guided interface is designed to make it easy for novice users to adjust the camera’s controls to achieve desired results. </p>
+    </div>
+</div>
+</body>
+</html>
+<nav style="position: fixed; top: 0; width: 100%; background-color: #333; color: white; padding: 10px 0; text-align: center;">
+    <a href="Welcome-page.html" style="margin: 0 15px; color: white; text-decoration: none; position: relative;">
+        Home
+        <span style="position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background-color: white; transition: width 0.3s;"></span>
+    </a>
+    <a href="contact.html" style="margin: 0 15px; color: white; text-decoration: none; position: relative;">
+        Contact
+        <span style="position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background-color: white; transition: width 0.3s;"></span>
+    </a>
+    <a href="#a.html" style="margin: 0 15px; color: white; text-decoration: none; position: relative;">
+        Camera Equipment
+        <span style="position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background-color: white; transition: width 0.3s;"></span>
+    </a>
+    <a href="Untitled-1.html" style="margin: 0 15px; color: white; text-decoration: none; position: relative;">
+        Social Medias
+        <span style="position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background-color: white; transition: width 0.3s;"></span>
+    </a>
+</nav>
+<script>
+    document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = this.getAttribute('href');
+        if (target && target !== '#') {
+        document.body.style.transition = 'opacity 0.5s';
+        document.body.style.opacity = 0;
+        setTimeout(() => {
+            window.location.href = target;
+        }, 500);
+        }
+    });
+    });
+</script>
+<script>
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('mouseover', () => {
+            link.querySelector('span').style.width = '100%';
+        });
+        link.addEventListener('mouseout', () => {
+            link.querySelector('span').style.width = '0';
+        });
+    });
+</script>
+</nav>

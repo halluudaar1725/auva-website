@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="härlig-nord-amerikansk-skallig-örn-74815261.webp">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auvas Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: transparent;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+        .navbar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+       
+        .hero {
+            height: 100vh;
+            background: url('https://wallup.net/wp-content/uploads/2019/09/132704-jas-39-saab-gripen-military.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="contact.html" style="font-size: 18px;">Contact</a>
+        <a href="a.html" style="font-size: 18px;">Camera Equipment</a>
+        <a href="Untitled-1.html" style="font-size: 18px;">Social Medias</a>
+        <script>
+            document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = this.getAttribute('href');
+                if (target && target !== '#') {
+                document.body.style.transition = 'opacity 0.5s';
+                document.body.style.opacity = 0;
+                setTimeout(() => {
+                    window.location.href = target;
+                }, 500);
+                }
+            });
+            });
+        </script>
+        <style>
+            .navbar a::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: black;
+                transition: width 0.3s ease-in-out;
+            }
+            .navbar a:hover::after {
+                width: 100%;
+            }
+        </style>
+        <a href="#"></a>
+    </div>
+    <section class="hero"></section>
+    <a href="https://example.com" class="join-now-btn">Join Now</a>
+</body>
+</html>
+<style>
+    .join-now-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color:rgb(56,156,248);
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .join-now-btn:hover {
+        background-color: darkblue;
+    }
+</style>
+<footer style="background-color: #333; color: white; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%;">
+    <p>&copy; 2025 Auvas Website. All rights reserved.</p>
+</footer>
